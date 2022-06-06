@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Alfa+Slab+One&family=Bigshot+One&family=Eater&family=Kdam+Thmor+Pro&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,300;1,800&family=Ultra&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: rgb(25, 18, 61);
+}
+ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+ul li {
+    position: relative;
+    list-style: none;
+
+}
+ul li a {
+
+position: relative;
+font-size: 4rem;
+text-decoration: none;
+color: transparent;
+line-height: 1em;
+letter-spacing: 2px;
+text-transform: uppercase;
+-webkit-text-stroke: 1px rgb(255, 255, 255 , 0.5);
+
+}
+ul li a::before {
+content: attr(data-text);
+color:var(--bcl);
+position: absolute;
+width: 0;
+overflow: hidden;
+transition: 1s;
+border-right: 8px solid var(--bcl);
+-webkit-text-stroke: 1px var(--bcl);
+
+
+}
+ul li a:hover::before {
+    width: 100%;
+filter: drop-shadow(0 0 25px  var(--bcl));
+}
