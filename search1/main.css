@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Alfa+Slab+One&family=Almarai:wght@700;800&family=Bigshot+One&family=Eater&family=Kdam+Thmor+Pro&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,300;1,800&family=Roboto+Slab:wght@400;500;600;700&family=Ultra&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background: linear-gradient(to right top, #051937, #0d315f, #144b8b, #1767ba, #1284eb);
+min-height: 100vh;
+}
+.search {
+
+min-width: 600px;
+
+}
+
+.search h2 {
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.search input {
+    font-size: 20px;
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+
+}
+.search input[type="text"]
+{
+background: #fff;
+height: 50px;
+width: 340px;
+outline: none;
+border: none;
+padding: 0 25px;
+
+}
+.search select {
+position: relative;
+top: -1px;
+left: -3px;
+border: none;
+outline: none;
+font-size: 18px;
+background: #fff;
+padding: 11px 16px 12px;
+margin: -2px;
+border-right: 15px solid #fff;
+
+}
+.search input[type="submit"]
+{
+    position: relative;
+color: #fff;
+height: 50px;
+width: 150px;
+outline: none;
+border: none;
+background: #901D1D;
+left: -5px;
+text-transform: uppercase;
+
+}
+
+.search input[type="submit"]:hover{
+    background: #AF8D4E;
+
+}

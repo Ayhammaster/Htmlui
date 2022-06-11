@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Alfa+Slab+One&family=Almarai:wght@700;800&family=Bigshot+One&family=Eater&family=Kdam+Thmor+Pro&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,300;1,800&family=Roboto+Slab:wght@400;500;600;700&family=Ultra&display=swap');
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Almarai', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right top, #04480a, #314f00, #525400, #735600, #945503);    min-height: 100vh;
+
+
+}
+
+menu {
+position: absolute;
+ top:20%;
+ right: 5%;
+
+}
+ul {
+position: relative;
+transform: skewY(-15deg);
+}
+menu ul li {
+    position: relative;
+    list-style: none;
+    width: 150px;
+    padding: 15px;
+    transition: 0.5s;
+    z-index: calc(1*var(--i));
+    background-color: var(--col);
+}
+menu ul li:hover {
+    transform: translateX(-50px);
+    background: var(--col);
+}
+menu ul li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -40px;;
+    width: 40px;
+    height: 100%;
+    background: var(--col);
+    filter: brightness(0.7);
+    transform-origin: right;
+    transform: skewY(45deg);
+    transition: 0.5s;
+}
+menu ul li:hover::before {
+    background: var(--col);
+    filter: brightness(0.7);
+    background: var(--col);
+
+}
+menu ul li::after {
+    content: '';
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width:100%;
+background: var(--col);
+    filter: brightness(0.9);
+    transform: scaleX(45deg);
+    transition: 0.5s;
+}
+menu ul li:hover::after {
+    filter: brightness(0.9);
+    background: var(--col);
+}
+menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 0.1em;
+    display: block;
+    transition: 0.5s;
+}
+menu ul li a:hover {
+    color: #fff;
+}
+menu ul li:last-child::after{
+box-shadow: -20px 120px 20px rgb(0, 0, 0,0.25);
+}
+menu ul li a span {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -40px;;
+    width: 40px;
+    height: 100%;
+    background: var(--col);
+    filter: brightness(0.8);
+    transform-origin: right;
+    transform: skewY(45deg);
+    transition: 0.5s;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+menu ul li a span:hover {
+    opacity: 1;
+}
